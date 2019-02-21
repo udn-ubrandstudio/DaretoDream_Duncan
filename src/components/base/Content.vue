@@ -17,14 +17,14 @@ export default {
   position: relative;
   z-index: 50;
   width: 100%;
-  padding: 64px 15px;
+  padding: 0px 15px;
   margin: 0 auto;
   background-color: #fff;
   @media (min-width: 768px) and (max-width: 1023px) {
     padding: 64px 100px;
   }
   @media screen and (min-width: 1024px) {
-    padding: 84px 0;
+    padding: 44px 0;
   }
 }
 .article{

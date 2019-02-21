@@ -82,7 +82,6 @@ export default {
   }
 }
 .description {
-  text-align: center;
   margin-top: 5px;
   font-size: 17px;
   color: gray;
