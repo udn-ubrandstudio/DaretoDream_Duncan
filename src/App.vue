@@ -84,7 +84,7 @@
       </div>
       <content-container>
       <br>
-      <div class="share-and-logo"> 
+      <div class="share-and-logo">
         <div class="share">
           <share href="https://udn.com/upf/ubrand/2019_data/DaretoDream_Duncan/index.html"></share>
         </div>
@@ -92,7 +92,7 @@
           <logo use-ubrand="yes" use-vision='no'>
             <div>
               <img :src="logo" alt="">
-            </div>         
+            </div>
           </logo>
         </div>
       </div>
@@ -101,10 +101,10 @@
         <div>文字採訪：盧巧梅</div>
         <div>影音製作：劉宜峰</div>
         <div>視覺設計：呂宗原</div>
-        <div>網頁製作：胡凈悟</div>
+        <div>網頁製作：胡凈悟、吳偉賢</div>
         <div>議題行銷：張乃文、陳欣媛、王敏霏</div>
         <div>監製：潘如瑩、董谷音、蔡幸怡、陳曼薇</div>
-        <div>2019.2.15</div>
+        <div>2019.3.15</div>
       </editor>
       <p><br></p>
       <fb-comment href="https://udn.com/upf/ubrand/2019_data/DaretoDream_Duncan/index.html"></fb-comment>
@@ -161,14 +161,14 @@ export default {
         isLock: false
       },
       {
-        id: 'anonymous1_btn',
-        idTo: 'anonymous1',
-        title: '3月',
-        name: '即將推出',
-        profile: require('@/../static/profiles/lock.png'),
-        profile_web: require('@/../static/profiles/lock_web.png'),
-        link: '.',
-        isLock: true
+        id: 'angel_btn',
+        idTo: 'angel',
+        title: '小提琴手',
+        name: 'Angel',
+        profile: require('@/../static/profiles/angel.png'),
+        profile_web: require('@/../static/profiles/angel_web.png'),
+        link: 'https://udn.com/upf/ubrand/2019_data/DaretoDream_Angel/index.html',
+        isLock: false
       },
       {
         id: 'anonymous2_btn',
@@ -204,14 +204,14 @@ export default {
   },
   methods: {
     handleLinkTo (isLock ,idTo ,event) {
-      
+
       let label = "[DaretoDream_Duncan][" + idTo + "][外連到" + idTo + "]"
 
       if(isLock) {
         label = "[DaretoDream_Duncan][" + idTo + "][目前無法外連]"
         event.preventDefault()
       }
-      
+
       window.ga("ubrand.send", {
         "hitType": "event",
         "eventCategory": "OptionButton",
@@ -276,7 +276,7 @@ html, body {
         }
       .main-cover {
         width: 100%;
-      } 
+      }
       .cover-title {
         width: 100%;
         background-color: rgba(#e60414, 0.6);
@@ -410,7 +410,7 @@ html, body {
             10%, 90% {
               transform: translate3d(-1px, 0, 0);
             }
-            
+
             20%, 80% {
               transform: translate3d(2px, 0, 0);
             }
@@ -448,7 +448,7 @@ html, body {
         padding: 0;
         text-indent: 0;
         list-style-type: 0;
-        li {    
+        li {
           overflow: hidden;
           width: 30%;
           display: flex;
@@ -498,7 +498,7 @@ html, body {
             10%, 90% {
               transform: translate3d(-1px, 0, 0);
             }
-            
+
             20%, 80% {
               transform: translate3d(2px, 0, 0);
             }
